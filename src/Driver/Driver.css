@@ -1,0 +1,57 @@
+.driver {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 4fr)
+        minmax(0, 3fr);
+    height: 2.5em;
+}
+
+.driver.player {
+    background-color: #ffffff33;
+}
+
+.driver :not(.name):not(.position) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.15em;
+}
+
+.brand {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    justify-self: center;
+}
+
+.name {
+    /* text-transform: uppercase; */
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: auto 0;
+}
+
+.gap {
+    color: lightgrey;
+}
+
+.tire {
+    color: darkred;
+}

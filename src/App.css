@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SF Mono;
+}
+
+:root {
+    --outer-border-radius: 1.5em;
+    --inner-border-radius: 0.75em;
+    --drivers: 0;
+    --max-drivers-visible: 10;
+    --blue-flag-color: #2c62e9;
+}
+
+body {
+    background-image: url('./assets/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 100vw;
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
+
+.tower-container {
+    width: 15%;
+    position: relative;
+}
+
+.blurry-background {
+    width: 100%;
+    background-color: #ffffff30;
+    border-top-left-radius: var(--outer-border-radius);
+    border-bottom-left-radius: var(--outer-border-radius);
+    border: 0.3em solid #00000027;
+    border-right: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+/* .blurry-background.blue {
+    background: linear-gradient(
+        to bottom right,
+        var(--blue-flag-color),
+        #ffffff30
+    );
+    background-clip: content-box;
+} */
+
+.main-background {
+    background-color: #000000ce;
+    border-top-left-radius: var(--inner-border-radius);
+    border-bottom-left-radius: var(--inner-border-radius);
+    display: grid;
+    grid-template-rows: 10fr 90fr;
+    display: inline;
+    margin: 1em 0 1em 1em;
+    border: 0.3em solid #0000000c;
+    border-right: none;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 7fr 3fr;
+}
+
+.race-info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: linear-gradient(to bottom, transparent, #a7a7a725);
+    align-items: center;
+    justify-content: space-around;
+    color: lightgrey;
+}
+
+.title {
+    background-image: url('./assets/images/8thgearfull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.laps {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.race-info div {
+    margin-bottom: 0.5em;
+}
+
+/* .race-info::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color: #80808056;
+    bottom: 0;
+} */
+
+.drivers {
+    display: grid;
+    grid-template-rows: repeat(
+        min(var(--drivers), var(--max-drivers-visible)),
+        1fr
+    );
+    overflow: hidden;
+    grid-auto-rows: 0px;
+    margin: 0.5em 0;
+}
+
+.flag {
+    color: transparent;
+    height: 0rem;
+    /* transition: height 0.2s ease-in-out; */
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+
+.blurry-background.blue .flag {
+    color: black;
+    background-color: var(--blue-flag-color);
+    height: 2.5rem;
+    /* animation: blueFlagBlink 1s ease-in-out infinite; */
+}
+
+.blurry-background.blue .drivers {
+    margin-top: 0;
+}
+
+@keyframes blueFlagBlink {
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: var(--blue-flag-color);
+    }
+}
+

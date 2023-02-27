@@ -1,0 +1,65 @@
+{
+    "drivers": [
+        {
+            "position": 1,
+            "brand": "grotti",
+            "name": "Enzo",
+            "gap": 0,
+            "player": true
+        },
+        {
+            "position": 2,
+            "brand": "benefactor",
+            "name": "bear",
+            "gap": 1.061
+        },
+        {
+            "position": 3,
+            "brand": "annis",
+            "name": "RobQnadqs",
+            "gap": 2.984
+        },
+        {
+            "position": 4,
+            "brand": "progen",
+            "name": "Lu6ky",
+            "gap": 3.676
+        },
+        {
+            "position": 5,
+            "brand": "declasse",
+            "name": "Shaapnesha",
+            "gap": 3.676
+        },
+        {
+            "position": 6,
+            "brand": "dinka",
+            "name": "Mr. Flatworm",
+            "gap": 3.676
+        },
+        {
+            "position": 7,
+            "brand": "karin",
+            "name": "dibeb",
+            "gap": 3.676
+        },
+        {
+            "position": 8,
+            "brand": "lampadati",
+            "name": "duney",
+            "gap": 3.676
+        },
+        {
+            "position": 9,
+            "brand": "canis",
+            "name": "bis",
+            "gap": 3.676
+        },
+        {
+            "position": 10,
+            "brand": "albany",
+            "name": "tijn",
+            "gap": 3.676
+        }
+    ]
+}
