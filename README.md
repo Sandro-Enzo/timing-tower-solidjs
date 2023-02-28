@@ -1,4 +1,4 @@
-![Current look](tower.png)
+![Current look](image.png)
 
 ## Usage
 
