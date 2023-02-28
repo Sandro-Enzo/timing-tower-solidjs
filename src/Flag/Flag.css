@@ -7,9 +7,9 @@
 
 .flag-blurry-background {
     width: 50%;
-    background-color: var(--blurry-background-color);
+    background-color: var(--blurry-background-flag-color);
     padding-top: 1rem;
-    border-top: 0.3rem solid var(--blurry-background-border-color);
+    border-top: 0.3rem solid var(--blurry-background-flag-border-color);
 }
 
 .flag {

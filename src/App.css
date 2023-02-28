@@ -37,6 +37,8 @@
     --blue-flag-color: #152039;
     --blurry-background-color: #ffffff0e;
     --blurry-background-border-color: #0000000e;
+    --blurry-background-flag-color: transparent;
+    --blurry-background-flag-border-color: transparent;
 }
 
 body {
