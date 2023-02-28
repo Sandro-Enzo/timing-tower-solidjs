@@ -15,7 +15,7 @@ const App: Component = () => {
 
     return (
         <div class='tower-container'>
-            <div class={`blurry-background `}>
+            <div class='blurry-background'>
                 <div class='main-background'>
                     <div class='header'>
                         <div class='title'></div>
@@ -50,7 +50,6 @@ const App: Component = () => {
                             </div>
                         </div>
                     </div>
-                    <div class='flag'>Blue Flag</div>
                     <div class='drivers'>
                         <For each={drivers.drivers}>
                             {(driver, i) => (
