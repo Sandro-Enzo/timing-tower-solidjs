@@ -1,10 +1,31 @@
+@font-face {
+    font-family: 'Formula 1 Display';
+    src: url('./assets/fonts/Formula1-Regular.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Formula 1 Display';
+    src: url('./assets/fonts/Formula1-Black.ttf');
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'Formula 1 Display';
+    src: url('./assets/fonts/Formula1-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Formula 1 Display';
+    src: url('./assets/fonts/Formula1-Wide.ttf');
+    font-stretch: expanded;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: SF Mono;
+    font-family: 'Formula 1 Display', SF Mono, consolas;
 }
 
 :root {
@@ -12,7 +33,10 @@
     --inner-border-radius: 0.75em;
     --drivers: 0;
     --max-drivers-visible: 10;
-    --blue-flag-color: #2c62e9;
+    /* --blue-flag-color: #2c62e9; */
+    --blue-flag-color: #152039;
+    --blurry-background-color: #ffffff0e;
+    --blurry-background-border-color: #0000000e;
 }
 
 body {
@@ -34,10 +58,10 @@ body {
 
 .blurry-background {
     width: 100%;
-    background-color: #ffffff30;
+    background-color: var(--blurry-background-color);
     border-top-left-radius: var(--outer-border-radius);
     border-bottom-left-radius: var(--outer-border-radius);
-    border: 0.3em solid #00000027;
+    border: 0.3rem solid var(--blurry-background-border-color);
     border-right: none;
     display: flex;
     justify-content: end;
@@ -61,7 +85,7 @@ body {
     display: grid;
     grid-template-rows: 10fr 90fr;
     display: inline;
-    margin: 1em 0 1em 1em;
+    margin: 1rem 0 1rem 1rem;
     border: 0.3em solid #0000000c;
     border-right: none;
 }
@@ -94,10 +118,12 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    font-weight: 100;
 }
 
 .race-info div {
     margin-bottom: 0.5em;
+    font-weight: 100;
 }
 
 /* .race-info::after {
