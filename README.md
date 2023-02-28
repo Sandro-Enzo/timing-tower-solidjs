@@ -1,4 +1,4 @@
-![Current look](image.png)
+![Current look](preview.png)
 
 ## Usage
 

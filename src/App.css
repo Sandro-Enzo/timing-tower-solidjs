@@ -40,15 +40,16 @@
 }
 
 body {
-    background-image: url('./assets/images/background.jpg');
+    /* background-image: url('./assets/images/background.jpg'); */
+    background-color: #222;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     height: 100vh;
     width: 100vw;
-    padding-top: 4rem;
-    padding-left: 4rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
 }
 
 .tower-container {
@@ -176,4 +177,3 @@ body {
         background-color: var(--blue-flag-color);
     }
 }
-
