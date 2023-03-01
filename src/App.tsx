@@ -1,6 +1,6 @@
 import { Component, createEffect, createSignal, For } from 'solid-js';
 import drivers from './assets/drivers.json';
-import Driver from './Components/Driver/Driver';
+import TowerDriver from './Components/TowerDriver/TowerDriver';
 import './App.css';
 import Flag from './Components/Flag/Flag';
 import Tower from './Components/Tower/Tower';

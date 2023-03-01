@@ -1,4 +1,4 @@
-import classes from './Driver.module.css';
+import classes from './TowerDriver.module.css';
 
 interface IDriver {
     position: number;
@@ -8,7 +8,7 @@ interface IDriver {
     player: boolean;
 }
 
-function Driver({ position, brand, name, gap, player }: IDriver) {
+function TowerDriver({ position, brand, name, gap, player }: IDriver) {
     const displayGap = parseFloat(gap) > 0 ? `+${gap}` : `-${gap}`;
 
     return (
@@ -29,4 +29,4 @@ function Driver({ position, brand, name, gap, player }: IDriver) {
     );
 }
 
-export default Driver;
+export default TowerDriver;

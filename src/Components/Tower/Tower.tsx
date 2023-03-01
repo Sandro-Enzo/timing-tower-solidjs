@@ -1,7 +1,7 @@
 import { createEffect, For, Show } from 'solid-js';
 import classes from './Tower.module.css';
 import drivers from '../../assets/drivers.json';
-import Driver from '../Driver/Driver';
+import TowerDriver from '../TowerDriver/TowerDriver';
 
 interface ITower {
     visible: boolean;
@@ -60,7 +60,7 @@ function Tower(props: ITower) {
                                 {(driver, i) => (
                                     i() !== 0 ? (gap += Math.random() * 3) : 0,
                                     (
-                                        <Driver
+                                        <TowerDriver
                                             brand={driver.brand}
                                             gap={gap.toFixed(3)}
                                             name={driver.name}
