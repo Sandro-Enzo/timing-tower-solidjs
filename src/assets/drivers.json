@@ -1,12 +1,130 @@
 {
+    "multiclass": false,
     "drivers": [
         {
             "position": 1,
             "brand": "grotti",
             "name": "Enzo",
             "gap": 0,
-            "player": true
+            "player": true,
+            "car": "Furia",
+            "fastestLap": 225.09,
+            "fps": 55,
+            "ping": 37,
+            "positionInClass": 0
         },
+        {
+            "position": 2,
+            "brand": "benefactor",
+            "name": "bear",
+            "gap": 0,
+            "car": "Krieger",
+            "fastestLap": 224.109,
+            "fps": 103,
+            "ping": 30,
+            "positionInClass": 0
+        },
+        {
+            "position": 3,
+            "brand": "annis",
+            "name": "RobQnadqs",
+            "gap": 0,
+            "car": "S80RR",
+            "fastestLap": 240.358,
+            "fps": 30,
+            "ping": 20,
+            "positionInClass": 0
+        },
+        {
+            "position": 4,
+            "brand": "grotti",
+            "name": "dibeb",
+            "gap": 0,
+            "car": "Itali RSX",
+            "fastestLap": 144.148,
+            "fps": 534,
+            "ping": 0,
+            "positionInClass": 0
+        },
+        {
+            "position": 5,
+            "brand": "overflod",
+            "name": "axel",
+            "gap": 0,
+            "car": "Entity XXR",
+            "fastestLap": 200.4,
+            "fps": 0,
+            "ping": 54,
+            "positionInClass": 0
+        },
+        {
+            "position": 6,
+            "brand": "benefactor",
+            "name": "bis",
+            "gap": 0,
+            "car": "panto",
+            "fastestLap": 645.517,
+            "fps": 43,
+            "ping": 560,
+            "positionInClass": 0
+        },
+        {
+            "position": 7,
+            "brand": "obey",
+            "name": "sjaak",
+            "gap": 0,
+            "car": "9F",
+            "fastestLap": 240.301,
+            "fps": 60,
+            "ping": 12,
+            "positionInClass": 0
+        },
+        {
+            "position": 8,
+            "brand": "ocelot",
+            "name": "gaiass",
+            "gap": 0,
+            "car": "ardent",
+            "fastestLap": 308.330,
+            "fps": 51,
+            "ping": 203,
+            "positionInClass": 0
+        },
+        {
+            "position": 9,
+            "brand": "progen",
+            "name": "Mr. Flatworm",
+            "gap": 0,
+            "car": "PR4",
+            "fastestLap": 143.2,
+            "fps": 30,
+            "ping": 34,
+            "positionInClass": 0
+        },
+        {
+            "position": 10,
+            "brand": "gallivanter",
+            "name": "shappnesha",
+            "gap": 0,
+            "car": "Baller ST",
+            "fastestLap": 241.29,
+            "fps": 60,
+            "ping": 33,
+            "positionInClass": 0
+        },
+        {
+            "position": 11,
+            "brand": "principe",
+            "name": "Lu6ky",
+            "gap": 0,
+            "car": "Deveste Eight",
+            "fastestLap": 164.590,
+            "fps": 76,
+            "ping": 54,
+            "positionInClass": 0
+        }
+    ],
+    "not-used": [
         {
             "position": 2,
             "brand": "benefactor",

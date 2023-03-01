@@ -42,6 +42,8 @@
     --results-border-background-color: #ffffff07;
     --results-border-border-color: #ffffff60;
     --results-main-background-color: #0b0c15;
+    --results-columns-template: minmax(0, 0.2fr) minmax(0, 1fr) minmax(0, 0.5fr)
+        minmax(0, 0.9fr) minmax(0, 0.8fr) minmax(0, 0.4fr) minmax(0, 0.4fr);
 }
 
 body {

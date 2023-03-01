@@ -1,0 +1,25 @@
+.results-driver-container {
+    display: grid;
+    grid-template-columns: var(--results-columns-template);
+    font-size: 1rem;
+}
+
+.results-driver-container div:not(.position) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.results-driver-container div {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0.3rem;
+    padding: 0 0.3rem;
+}
+
+.brand {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
