@@ -4,10 +4,12 @@ import Driver from './Components/Driver/Driver';
 import './App.css';
 import Flag from './Components/Flag/Flag';
 import Tower from './Components/Tower/Tower';
+import Results from './Components/Results/Results';
 
 const App: Component = () => {
     const [flagVisible, setFlagVisible] = createSignal(false);
     const [towerVisible, setTowerVisible] = createSignal(true);
+    const [resultsVisible, setResultsVisible] = createSignal(false);
 
     document.onkeydown = (ev) => {
         switch (ev.key) {
@@ -17,11 +19,15 @@ const App: Component = () => {
             case 't':
                 setTowerVisible((prev) => !prev);
                 break;
+            case 'r':
+                setResultsVisible((prev) => !prev);
+                break;
         }
     };
 
     return (
         <>
+            <Results visible={resultsVisible()} />
             <Tower visible={towerVisible()} />
             <Flag visible={flagVisible()} />
         </>
