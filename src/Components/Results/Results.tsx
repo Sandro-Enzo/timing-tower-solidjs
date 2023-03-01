@@ -1,5 +1,5 @@
 import { Show } from 'solid-js';
-import './Results.css';
+import classes from './Results.module.css';
 
 interface IResults {
     visible: boolean;
@@ -8,7 +8,14 @@ interface IResults {
 function Results(props: IResults) {
     return (
         <Show when={props.visible}>
-            <div>Results</div>
+            <div class={classes.resultsContainer}>
+                <div class={classes.transparentBackground}>
+                    <div class={classes.mainContent}>
+                        <div class={classes.header}></div>
+                        <div class={classes.drivers}></div>
+                    </div>
+                </div>
+            </div>
         </Show>
     );
 }
