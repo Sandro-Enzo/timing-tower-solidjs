@@ -7,18 +7,22 @@ import Tower from './Components/Tower/Tower';
 
 const App: Component = () => {
     const [flagVisible, setFlagVisible] = createSignal(false);
+    const [towerVisible, setTowerVisible] = createSignal(true);
 
     document.onkeydown = (ev) => {
-        if (ev.key === 'b') {
-            setFlagVisible((prev) => {
-                return !prev;
-            });
+        switch (ev.key) {
+            case 'b':
+                setFlagVisible((prev) => !prev);
+                break;
+            case 't':
+                setTowerVisible((prev) => !prev);
+                break;
         }
     };
 
     return (
         <>
-            <Tower />
+            <Tower visible={towerVisible()} />
             <Flag visible={flagVisible()} />
         </>
     );
