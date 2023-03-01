@@ -26,14 +26,14 @@
 } */
 
 .main-background {
-    background-color: #000000ce;
+    background-color: var(--tower-main-background-color);
     border-top-left-radius: var(--inner-border-radius);
     border-bottom-left-radius: var(--inner-border-radius);
     display: grid;
     grid-template-rows: 10fr 90fr;
     display: inline;
     margin: 1rem 0 1rem 1rem;
-    border: 0.3em solid #0000000c;
+    border: 0.3em solid var(--tower-main-background-border-color);
     border-right: none;
 }
 
