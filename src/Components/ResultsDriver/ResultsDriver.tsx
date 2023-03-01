@@ -31,7 +31,11 @@ function ResultsDriver({
     const millis = date.getMilliseconds();
 
     return (
-        <div class={classes.resultsDriverContainer}>
+        <div
+            class={`${classes.resultsDriverContainer} ${
+                player ? classes.player : ''
+            }`}
+        >
             <div class={classes.position}>{position}</div>
             {data.multiclass && (
                 <div class={classes.positionInClass}>{positionInClass}</div>

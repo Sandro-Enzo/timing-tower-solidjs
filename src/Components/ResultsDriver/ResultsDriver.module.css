@@ -4,6 +4,14 @@
     font-size: 1rem;
 }
 
+.player {
+    background-color: #dcdcdc;
+}
+
+.player div {
+    color: black !important;
+}
+
 .results-driver-container div:not(.position) {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -17,14 +25,14 @@
 .results-driver-container div {
     color: white;
     font-weight: 100;
-    margin-bottom: 0.3rem;
-    padding: 0 0.3rem;
+    padding: 0.3rem 0.3rem;
 }
 
 .brand {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    scale: 80%;
 }
 
 .position {
