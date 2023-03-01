@@ -1,8 +1,7 @@
-import { Show } from 'solid-js';
-import classes from './ResultsDriver.module.css';
+import classes from './ExpandedDriver.module.css';
 import data from '../../assets/drivers.json';
 
-interface IResultsDriver {
+interface IExpandedDriver {
     position: number;
     positionInClass: number;
     name: string;
@@ -14,7 +13,7 @@ interface IResultsDriver {
     player: boolean;
 }
 
-function ResultsDriver({
+function ExpandedDriver({
     position,
     positionInClass,
     name,
@@ -24,7 +23,7 @@ function ResultsDriver({
     ping,
     brand,
     player,
-}: IResultsDriver) {
+}: IExpandedDriver) {
     const date = new Date(fastestLap * 1000);
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
@@ -57,4 +56,4 @@ function ResultsDriver({
     );
 }
 
-export default ResultsDriver;
+export default ExpandedDriver;

@@ -1,10 +1,8 @@
-import { Component, createEffect, createSignal, For } from 'solid-js';
-import drivers from './assets/drivers.json';
-import TowerDriver from './Components/TowerDriver/TowerDriver';
+import { Component, createSignal } from 'solid-js';
 import './App.css';
 import Flag from './Components/Flag/Flag';
 import Tower from './Components/Tower/Tower';
-import Results from './Components/Results/Results';
+import Expanded from './Components/Expanded/Expanded';
 
 const App: Component = () => {
     const [flagVisible, setFlagVisible] = createSignal(false);
@@ -27,7 +25,7 @@ const App: Component = () => {
 
     return (
         <>
-            <Results visible={resultsVisible()} />
+            <Expanded visible={resultsVisible()} />
             <Tower visible={towerVisible()} />
             <Flag visible={flagVisible()} />
         </>

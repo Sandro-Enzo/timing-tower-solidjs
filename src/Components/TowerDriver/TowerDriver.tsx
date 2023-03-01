@@ -1,6 +1,6 @@
 import classes from './TowerDriver.module.css';
 
-interface IDriver {
+interface ITowerDriver {
     position: number;
     brand: string;
     name: string;
@@ -8,7 +8,7 @@ interface IDriver {
     player: boolean;
 }
 
-function TowerDriver({ position, brand, name, gap, player }: IDriver) {
+function TowerDriver({ position, brand, name, gap, player }: ITowerDriver) {
     const displayGap = parseFloat(gap) > 0 ? `+${gap}` : `-${gap}`;
 
     return (

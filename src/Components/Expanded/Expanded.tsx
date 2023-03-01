@@ -2,13 +2,13 @@ import { For, Show } from 'solid-js';
 import classes from './Results.module.css';
 import data from '../../assets/drivers.json';
 import TowerDriver from '../TowerDriver/TowerDriver';
-import ResultsDriver from '../ResultsDriver/ResultsDriver';
+import ExpandedDriver from '../ExpandedDriver/ExpandedDriver';
 
-interface IResults {
+interface IExpanded {
     visible: boolean;
 }
 
-function Results(props: IResults) {
+function Expanded(props: IExpanded) {
     return (
         <Show when={props.visible}>
             <div class={classes.resultsContainer}>
@@ -34,7 +34,7 @@ function Results(props: IResults) {
                         <div class={classes.drivers}>
                             <For each={data.drivers}>
                                 {(driver, i) => (
-                                    <ResultsDriver
+                                    <ExpandedDriver
                                         brand={driver.brand}
                                         name={driver.name}
                                         player={'player' in driver}
@@ -55,4 +55,4 @@ function Results(props: IResults) {
     );
 }
 
-export default Results;
+export default Expanded;
