@@ -1,5 +1,5 @@
 import { createEffect, For, Show } from 'solid-js';
-import './Tower.css';
+import classes from './Tower.module.css';
 import drivers from '../../assets/drivers.json';
 import Driver from '../Driver/Driver';
 
@@ -19,13 +19,13 @@ function Tower(props: ITower) {
 
     return (
         <Show when={props.visible}>
-            <div class='tower-container'>
-                <div class='blurry-background'>
-                    <div class='main-background'>
-                        <div class='header'>
-                            <div class='title'></div>
-                            <div class='race-info'>
-                                <div class='laps'>
+            <div class={classes.towerContainer}>
+                <div class={classes.blurryBackground}>
+                    <div class={classes.mainBackground}>
+                        <div class={classes.header}>
+                            <div class={classes.title}></div>
+                            <div class={classes.raceInfo}>
+                                <div class={classes.laps}>
                                     <span>
                                         LAP{' '}
                                         <span
@@ -39,7 +39,7 @@ function Tower(props: ITower) {
                                         /57
                                     </span>
                                 </div>
-                                <div class='checkpoints'>
+                                <div class={classes.checkpoints}>
                                     <span>
                                         CP{' '}
                                         <span
@@ -55,7 +55,7 @@ function Tower(props: ITower) {
                                 </div>
                             </div>
                         </div>
-                        <div class='drivers'>
+                        <div class={classes.drivers}>
                             <For each={drivers.drivers}>
                                 {(driver, i) => (
                                     i() !== 0 ? (gap += Math.random() * 3) : 0,

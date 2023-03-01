@@ -1,5 +1,5 @@
 import { mergeProps, Show } from 'solid-js';
-import './Flag.css';
+import classes from './Flag.module.css';
 
 interface IFlag {
     visible: boolean;
@@ -8,14 +8,14 @@ interface IFlag {
 function Flag(props: IFlag) {
     return (
         <Show when={props.visible}>
-            <div class='flag-container'>
-                <div class='flag-blurry-background'>
-                    <div class='flag'>
-                        <div class='message-container'>
-                            <div class='logo'></div>
-                            <div class='message'>BLUE FLAG</div>
+            <div class={classes.flagContainer}>
+                <div class={classes.flagBlurryBackground}>
+                    <div class={classes.flag}>
+                        <div class={classes.messageContainer}>
+                            <div class={classes.logo}></div>
+                            <div class={classes.message}>BLUE FLAG</div>
                         </div>
-                        <div class='explanation'>
+                        <div class={classes.explanation}>
                             Faster car(s) approaching behind
                         </div>
                     </div>
