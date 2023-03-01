@@ -8,11 +8,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    text-align: center;
 }
 
 .results-driver-container div {
     color: white;
-    text-align: center;
     font-weight: 100;
     margin-bottom: 0.3rem;
     padding: 0 0.3rem;
@@ -22,4 +22,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.position {
+    text-align: end;
 }
