@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: start;
+    position: fixed;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .flag-blurry-background {
