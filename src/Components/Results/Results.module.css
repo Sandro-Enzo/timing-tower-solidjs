@@ -14,8 +14,8 @@
 .main-content {
     background-color: var(--results-main-background-color);
     border-radius: 0.3rem;
-    display: grid;
-    grid-template-rows: minmax(0, 1fr) minmax(0, 7fr);
+    display: inherit;
+    /* grid-template-rows: minmax(0, 1fr) minmax(0, 7fr); */
     padding: 1rem;
 }
 
