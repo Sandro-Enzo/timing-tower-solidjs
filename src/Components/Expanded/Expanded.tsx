@@ -1,7 +1,6 @@
 import { For, Show } from 'solid-js';
-import classes from './Results.module.css';
+import classes from './Expanded.module.css';
 import data from '../../assets/drivers.json';
-import TowerDriver from '../TowerDriver/TowerDriver';
 import ExpandedDriver from '../ExpandedDriver/ExpandedDriver';
 
 interface IExpanded {
