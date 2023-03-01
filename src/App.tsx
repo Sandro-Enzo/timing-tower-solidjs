@@ -8,8 +8,8 @@ import Results from './Components/Results/Results';
 
 const App: Component = () => {
     const [flagVisible, setFlagVisible] = createSignal(false);
-    const [towerVisible, setTowerVisible] = createSignal(true);
-    const [resultsVisible, setResultsVisible] = createSignal(false);
+    const [towerVisible, setTowerVisible] = createSignal(false);
+    const [resultsVisible, setResultsVisible] = createSignal(true);
 
     document.onkeydown = (ev) => {
         switch (ev.key) {

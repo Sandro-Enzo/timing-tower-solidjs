@@ -39,15 +39,18 @@
     --blurry-background-border-color: #0000000e;
     --blurry-background-flag-color: transparent;
     --blurry-background-flag-border-color: transparent;
+    --results-border-background-color: #ffffff07;
+    --results-border-border-color: #ffffff60;
+    --results-main-background-color: #0b0c15;
 }
 
 body {
-    /* background-image: url('./assets/images/background.jpg'); */
+    background-image: url('./assets/images/background.jpg');
     background-color: #222;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* backdrop-filter: blur(8px); */
+    backdrop-filter: blur(8px);
     height: 100vh;
     width: 100vw;
     padding-top: 3rem;

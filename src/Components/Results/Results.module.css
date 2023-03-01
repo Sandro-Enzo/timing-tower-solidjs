@@ -1,0 +1,36 @@
+.results-container {
+    position: fixed;
+    top: 4rem;
+    left: 1rem;
+}
+
+.transparent-background {
+    background-color: var(--results-border-background-color);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    border: 1px solid var(--results-border-border-color);
+}
+
+.main-content {
+    background-color: var(--results-main-background-color);
+    border-radius: 0.3rem;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 7fr);
+}
+
+.header {
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.label {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 1fr;
+}
+
+.label div {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
