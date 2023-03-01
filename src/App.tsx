@@ -1,8 +1,8 @@
-import { Component, createEffect, For } from 'solid-js';
+import { Component, createEffect, createSignal, For } from 'solid-js';
 import drivers from './assets/drivers.json';
-import Driver from './Driver/Driver';
+import Driver from './Components/Driver/Driver';
 import './App.css';
-import Flag from './Flag/Flag';
+import Flag from './Components/Flag/Flag';
 
 const App: Component = () => {
     let gap = 0;
@@ -13,6 +13,16 @@ const App: Component = () => {
             `${drivers.drivers.length}`
         );
     });
+
+    const [flagVisible, setFlagVisible] = createSignal(false);
+
+    document.onkeydown = (ev) => {
+        if (ev.key === 'b') {
+            setFlagVisible((prev) => {
+                return !prev;
+            });
+        }
+    };
 
     return (
         <>
@@ -87,10 +97,9 @@ const App: Component = () => {
                     </div>
                 </div>
             </div>
-            <Flag />
+            <Flag visible={flagVisible()} />
         </>
     );
 };
 
 export default App;
-
