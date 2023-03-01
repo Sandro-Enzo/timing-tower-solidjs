@@ -8,6 +8,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.results-driver-container div:not(.position):not(.car):not(.name) {
     text-align: center;
 }
 
