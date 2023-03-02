@@ -6,6 +6,7 @@
         minmax(0, 4fr)
         minmax(0, 3fr);
     height: 2.5em;
+    position: relative;
 }
 
 .driver.player {
@@ -42,10 +43,10 @@
     font-weight: 600;
     font-size: 1.2em;
     padding-left: 0.5em;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: auto 0;
+    overflow: hidden;
 }
 
 .gap {
@@ -56,3 +57,13 @@
 .tire {
     color: darkred;
 }
+
+/* .fastest-lap {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: var(--fastest-lap-color);
+    position: absolute;
+    right: -15.3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+} */

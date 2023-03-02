@@ -1,3 +1,4 @@
+import { Show } from 'solid-js';
 import classes from './TowerDriver.module.css';
 
 interface ITowerDriver {
@@ -12,20 +13,22 @@ function TowerDriver({ position, brand, name, gap, player }: ITowerDriver) {
     const displayGap = parseFloat(gap) > 0 ? `+${gap}` : `-${gap}`;
 
     return (
-        <div class={`${classes.driver} ${player ? classes.player : ''}`}>
-            <div class={classes.position}>{position}</div>
-            <div
-                class={classes.brand}
-                style={{
-                    'background-image': `url('./src/assets/images/${brand}.webp')`,
-                }}
-            ></div>
-            <div class={classes.name}>{name}</div>
-            <div class={classes.gap}>
-                {parseFloat(gap) > 0 ? displayGap : 'Leader'}
+        <>
+            <div class={`${classes.driver} ${player ? classes.player : ''}`}>
+                <div class={classes.position}>{position}</div>
+                <div
+                    class={classes.brand}
+                    style={{
+                        'background-image': `url('./src/assets/images/${brand}.webp')`,
+                    }}
+                ></div>
+                <div class={classes.name}>{name}</div>
+                <div class={classes.gap}>
+                    {parseFloat(gap) > 0 ? displayGap : 'Leader'}
+                </div>
+                {/* <div class="tire">S</div> */}
             </div>
-            {/* <div class="tire">S</div> */}
-        </div>
+        </>
     );
 }
 

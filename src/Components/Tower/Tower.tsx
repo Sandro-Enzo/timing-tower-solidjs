@@ -1,6 +1,6 @@
 import { createEffect, For, Show } from 'solid-js';
 import classes from './Tower.module.css';
-import drivers from '../../assets/drivers.json';
+import data from '../../assets/drivers.json';
 import TowerDriver from '../TowerDriver/TowerDriver';
 
 interface ITower {
@@ -13,7 +13,7 @@ function Tower(props: ITower) {
     createEffect(() => {
         document.documentElement.style.setProperty(
             '--drivers',
-            `${drivers.drivers.length}`
+            `${data.drivers.length}`
         );
     });
 
@@ -56,7 +56,7 @@ function Tower(props: ITower) {
                             </div>
                         </div>
                         <div class={classes.drivers}>
-                            <For each={drivers.drivers}>
+                            <For each={data.drivers}>
                                 {(driver, i) => (
                                     i() !== 0 ? (gap += Math.random() * 3) : 0,
                                     (

@@ -33,7 +33,6 @@
     --inner-border-radius: 0.75em;
     --drivers: 0;
     --max-drivers-visible: 10;
-    /* --blue-flag-color: #2c62e9; */
     --blue-flag-color: #152039;
     --blurry-background-color: #ffffff0e;
     --blurry-background-border-color: #0000000e;
@@ -44,6 +43,8 @@
     --results-border-background-color: #ffffff07;
     --results-border-border-color: #ffffff60;
     --results-main-background-color: #0b0c15ce;
+    --fastest-lap-color: #7d358d;
+
     /* pos name brand car fl fps ping*/
     --results-columns-template: minmax(0, 0.3fr) minmax(0, 1fr) minmax(0, 0.5fr)
         minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 0.4fr) minmax(0, 0.4fr);

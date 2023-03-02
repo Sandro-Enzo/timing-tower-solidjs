@@ -6,20 +6,22 @@ import Expanded from './Components/Expanded/Expanded';
 
 const App: Component = () => {
     const [flagVisible, setFlagVisible] = createSignal(false);
-    const [towerVisible, setTowerVisible] = createSignal(false);
-    const [resultsVisible, setResultsVisible] = createSignal(true);
+    const [towerVisible, setTowerVisible] = createSignal(true);
+    const [resultsVisible, setResultsVisible] = createSignal(false);
 
     document.onkeydown = (ev) => {
-        switch (ev.key) {
-            case 'b':
-                setFlagVisible((prev) => !prev);
-                break;
-            case 't':
-                setTowerVisible((prev) => !prev);
-                break;
-            case 'r':
-                setResultsVisible((prev) => !prev);
-                break;
+        if (!ev.ctrlKey) {
+            switch (ev.key) {
+                case 'b':
+                    setFlagVisible((prev) => !prev);
+                    break;
+                case 't':
+                    setTowerVisible((prev) => !prev);
+                    break;
+                case 'r':
+                    setResultsVisible((prev) => !prev);
+                    break;
+            }
         }
     };
 

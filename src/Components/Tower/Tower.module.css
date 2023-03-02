@@ -88,7 +88,8 @@
         min(var(--drivers), var(--max-drivers-visible)),
         1fr
     );
-    overflow: hidden;
     grid-auto-rows: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0.5em 0;
 }
