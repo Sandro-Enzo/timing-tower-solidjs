@@ -19,7 +19,7 @@ function TowerDriver({ position, brand, name, gap, player }: ITowerDriver) {
                 <div
                     class={classes.brand}
                     style={{
-                        'background-image': `url('./src/assets/images/${brand}.webp')`,
+                        'background-image': `url('/logos/${brand}.webp')`,
                     }}
                 ></div>
                 <div class={classes.name}>{name}</div>
