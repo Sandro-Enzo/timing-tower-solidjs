@@ -7,7 +7,7 @@ import Expanded from './Components/Expanded/Expanded';
 const App: Component = () => {
     const [flagVisible, setFlagVisible] = createSignal(false);
     const [towerVisible, setTowerVisible] = createSignal(true);
-    const [resultsVisible, setResultsVisible] = createSignal(false);
+    const [expandedVisible, setExpandedVisible] = createSignal(false);
 
     document.onkeydown = (ev) => {
         if (!ev.ctrlKey) {
@@ -19,7 +19,7 @@ const App: Component = () => {
                     setTowerVisible((prev) => !prev);
                     break;
                 case 'r':
-                    setResultsVisible((prev) => !prev);
+                    setExpandedVisible((prev) => !prev);
                     break;
             }
         }
@@ -27,7 +27,7 @@ const App: Component = () => {
 
     return (
         <>
-            <Expanded visible={resultsVisible()} />
+            <Expanded visible={expandedVisible()} />
             <Tower visible={towerVisible()} />
             <Flag visible={flagVisible()} />
         </>
